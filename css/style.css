@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+    font-family: "Overpass-Var";
+    src: url('../Fonts/Overpass/Overpass-VariableFont_wght.ttf');
+}
+
+:root {
+  --White: hsl(0, 0%, 100%);
+  --LightGrey: hsl(217, 12%, 63%);
+  --LightBlue:  hsl(213, 19%, 21%);
+  --DarkBlue: hsl(213, 19%, 18%);
+  --VeryDarkBlue: hsl(216, 12%, 8%);
+  --Orange: hsl(25, 97%, 53%);
+}
+
+body {
+    font-family: "Overpass-Var", sans-serif;
+    font-size: 15px;
+}
+
+p {
+    color: var(--LightGrey);
+}
+
+
+/* RATING CONTAINER */
+
+div.container {
+  background-color: var(--VeryDarkBlue);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.container .content-container {
+  background-color: var(--DarkBlue);
+  color: var(--White);
+  border-radius: 1em;
+  width: 90%;
+  max-width: 500px;
+}
+
+.content {
+    width: 90%;
+    margin: 2.5em auto;
+}
+
+.rate-container {
+}
+
+.rate-container .icon-star {
+    background-color:  var(--LightBlue);
+    border-radius: 100%;
+    padding: 0.9em;
+}
+
+.rate-container .heading {
+    font-size: 2rem;
+    margin: 0.5em 0;
+}
+
+.rate-container .information {
+    line-height: 1.5;
+}
+
+.btn-rate {
+    display: flex;
+    justify-content: space-between;
+    margin: 1.5em 0;
+}
+
+button {
+    cursor: pointer;
+}
+
+.btn-rate button {
+    background-color: var(--LightBlue);
+    border: none;
+    border-radius: 50%;
+    color: var(--LightGrey);
+    font-weight: 800;
+    width: 3rem;
+    height: 3rem;
+    /* padding: 1.2em 1.5em; */
+}
+
+.btn-rate button:hover {
+    background-color: var(--Orange);
+    color: var(--VeryDarkBlue);
+}
+
+.submit-btn:hover,
+.btn-rate button:focus {
+    background-color: var(--White);
+    color: var(--VeryDarkBlue);
+}
+
+
+.submit-btn {
+    background-color: var(--Orange);
+    border: none;
+    border-radius: 3em;
+    font-size: 1.1rem;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    padding: 1em;
+    width: 100%;
+}
+
+
+/* THANK YOU CONTAINER */
+
+
+.container .thankyou-container {
+    display: none;
+    text-align: center;
+}
+
+.thankyou-container h2 {
+    font-size: 2rem;
+}
+
+.thankyou-container .info {
+    background-color: var(--LightBlue);
+    border-radius: 3em;
+    color: var(--Orange);
+    font-size: 1.2rem;
+    margin: 1.5em auto;
+    padding: 0.1em;
+    width: 60%;
+}
+
+.thankyou-container p {
+    margin: 1.5em 0;
+    line-height: 1.5;
+}
+
+
+
+/* FOOTER */
+
+.attribution {
+    color: var(--LightGrey);
+  font-size: 0.9rem;
+  position: absolute;
+  text-align: center;
+  bottom: 0;
+}
+.attribution a {
+  color: var(--Orange);
+  text-decoration: none;
+}
+
+
+@media (min-width: 28.5em) {
+    .btn-rate button {
+        width: 4rem;
+        height: 4rem;
+    }
+}
