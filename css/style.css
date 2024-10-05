@@ -46,7 +46,7 @@ div.container {
   color: var(--White);
   border-radius: 1em;
   width: 90%;
-  max-width: 500px;
+  max-width: 450px;
 }
 
 .content {
